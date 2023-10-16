@@ -45,7 +45,7 @@ executables:
         go fmt ./...
         golangci-lint run ./... --fix
         echo "Running test suite"
-        go test ./...
+        go test ./... -race
   - type: run
     name: install-deps
     aliases:
